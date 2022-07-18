@@ -1,7 +1,11 @@
-export const state = {
-  scores: [],
-};
+import API_URL from './config';
 
-export const addScore = (score) => {
-  state.scores.push(score);
+export default async (score) => {
+  await fetch(API_URL, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(score),
+  });
 };

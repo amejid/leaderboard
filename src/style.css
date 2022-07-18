@@ -57,6 +57,7 @@ html {
 .score {
   padding: 0.4rem;
   font-size: 1.8rem;
+  font-weight: 700;
 }
 
 .score:nth-child(odd) {

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -6,12 +8,16 @@
 
 html {
   font-size: 62.5%;
-  font-family: sans-serif;
+  font-family: 'Lato', sans-serif;
 }
 
 .main-container {
-  width: 80rem;
+  background-color: #dad7cd;
+  color: #2b2d42;
+  border-radius: 4px;
+  width: 85rem;
   margin: 0 auto;
+  padding: 2.4rem;
 }
 
 .header-title {
@@ -52,6 +58,7 @@ html {
 .scores {
   border: 2px solid #000;
   list-style: none;
+  border-radius: 4px;
 }
 
 .score {
@@ -61,7 +68,7 @@ html {
 }
 
 .score:nth-child(odd) {
-  background-color: #e6e6e6;
+  background-color: #a3b18a;
 }
 
 .form-add {
@@ -80,12 +87,18 @@ html {
 
 .btn {
   cursor: pointer;
-  background: none;
-  border: 2px solid #000;
+  background: #344e41;
+  color: #dad7cd;
+  border-radius: 4px;
   font-weight: 700;
   font-size: 1.8rem;
-  box-shadow: 0.4rem 0.2rem 0.2rem #000;
+  box-shadow: 0.4rem 0.2rem 0.2rem #a3b18a;
   padding: 0.4rem 0.8rem;
+}
+
+.btn:hover {
+  background: #588157;
+  color: #2b2d42;
 }
 
 .btn-submit {
